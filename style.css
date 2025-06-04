@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+.title {
+    color: #e91e63;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background: #e91e63;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #d81b60;
+}
+
+.password-section {
+    margin-top: 20px;
+}
+
+#surprise {
+    color: #4caf50;
+}
+
+img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        padding: 5px;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.ui-datepicker {
+    font-size: 1rem;
+}
+
+/* Destaque para o dia do coração */
+.highlight a {
+    background: #ffb6c1 !important;
+    color: #e91e63 !important;
+    border-radius: 50%;
+}

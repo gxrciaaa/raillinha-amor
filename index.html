@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery UI Datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Surpresa para você, meu amor! 💖</h1>
+        <p class="description">Vamos testar o quanto você conhece a nossa história!</p>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <p>Qual foi o nosso primeiro filme juntos?</p>
+            <input type="text" id="q1" class="input" placeholder="Digite sua resposta...">
+            <button type="button" onclick="nextQuestion('q1', 'answer1')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2" style="display:none;">
+            <p>Onde foi nossa primeira viagem juntos? 💕</p>
+            <input type="text" id="q2" class="input" placeholder="Digite sua resposta...">
+            <button type="button" onclick="nextQuestion('q2', 'answer2')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 3 com o Calendário -->
+        <div class="question" id="question3" style="display:none;">
+            <p>Em que data nos conhecemos? (Selecione a data no calendário)</p>
+            <input type="text" id="datepicker" class="input" autocomplete="off" readonly>
+            <span id="heart" style="font-size: 2rem; display: none;">❤️</span>
+            <button type="button" onclick="checkDate()">Próxima</button>
+        </div>
+
+        <!-- Seção para a senha -->
+        <div class="password-section" id="passwordSection" style="display:none;">
+            <p>Agora, digite a senha mágica para a surpresa final:</p>
+            <input type="text" id="password" class="input" placeholder="Digite a senha...">
+            <button type="button" onclick="validatePassword()">Revelar!</button>
+        </div>
+
+        <!-- Surpresa final -->
+        <div id="surprise" style="display:none;">
+            <h2>Parabéns, você acertou! 🎉</h2>
+            <p>Você é a mulher da minha vida, e mais inteligente do que eu imaginava. Obrigado por cuidar de mim e ter paciência das minhas criancices. Eu te amo, Armazém Paraíba 💖</p>
+            <img src="Imagem do WhatsApp de 2025-06-04 à(s) 17.01.50_23e34f4f.jpg" alt="A surpresa está aqui!">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
